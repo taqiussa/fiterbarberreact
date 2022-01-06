@@ -20,19 +20,16 @@ import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
-import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
-import Upgrade from "views/Upgrade.js";
-
+import Pegawai from "views/pages/pegawai/Pegawai";
+import Pemasukan from "views/pages/pemasukan/Pemasukan";
+import Pengeluaran from "views/pages/pengeluaran/Pengeluaran";
+import Laporan from "views/pages/laporan/Laporan";
+import Libur from "views/pages/libur/Libur";
+import Bon from "views/pages/bon/Bon";
+import Keuangan from "views/pages/keuangan/Keuangan";
+import Logout from "views/auth/Logout";
 const dashboardRoutes = [
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin",
-  },
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -41,10 +38,60 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/pegawai",
+    name: "Pegawai",
+    icon: "nc-icon nc-circle-09",
+    component: Pegawai,
+    layout: "/admin",
+  },
+  {
+    path: "/pemasukan",
+    name: "Pemasukan",
+    icon: "nc-icon nc-chart-bar-32",
+    component: Pemasukan,
+    layout: "/admin",
+  },
+  {
+    path: "/pengeluaran",
+    name: "Pengeluaran",
+    icon: "nc-icon nc-cart-simple",
+    component: Pengeluaran,
+    layout: "/admin",
+  },
+  {
+    path: "/libur",
+    name: "Libur",
+    icon: "nc-icon nc-badge",
+    component: Libur,
+    layout: "/admin",
+  },
+  {
+    path: "/bon",
+    name: "Bon",
+    icon: "nc-icon nc-paper-2",
+    component: Bon,
+    layout: "/admin",
+  },
+  {
+    path: "/laporan",
+    name: "Laporan",
+    icon: "nc-icon nc-single-copy-04",
+    component: Laporan,
+    layout: "/admin",
+  },
+  {
+    path: "/keuangan",
+    name: "Keuangan",
+    icon: "nc-icon nc-notes",
+    component: Keuangan,
+    layout: "/admin",
+  },
+  {
     path: "/user",
     name: "User Profile",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
+    invisible: true,
     layout: "/admin",
   },
   {
@@ -52,6 +99,7 @@ const dashboardRoutes = [
     name: "Table List",
     icon: "nc-icon nc-notes",
     component: TableList,
+    invisible: true,
     layout: "/admin",
   },
   {
@@ -59,6 +107,7 @@ const dashboardRoutes = [
     name: "Typography",
     icon: "nc-icon nc-paper-2",
     component: Typography,
+    invisible: true,
     layout: "/admin",
   },
   {
@@ -66,13 +115,7 @@ const dashboardRoutes = [
     name: "Icons",
     icon: "nc-icon nc-atom",
     component: Icons,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
+    invisible: true,
     layout: "/admin",
   },
   {
@@ -80,6 +123,14 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
+    invisible: true,
+    layout: "/admin",
+  },
+  {
+    path: "/logout",
+    name: "Logout",
+    icon: "nc-icon nc-bell-55",
+    component: Logout,
     layout: "/admin",
   },
 ];

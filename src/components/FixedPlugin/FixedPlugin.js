@@ -16,9 +16,9 @@
 
 */
 /*eslint-disable*/
-import React, { Component } from "react";
+import React from "react";
 
-import { Dropdown, Badge, Button, Form } from "react-bootstrap";
+import { Dropdown, Badge, Form } from "react-bootstrap";
 
 import sideBarImage1 from "assets/img/sidebar-1.jpg";
 import sideBarImage2 from "assets/img/sidebar-2.jpg";
@@ -33,21 +33,6 @@ function FixedPlugin({
   image,
   setImage,
 }) {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     classes: "dropdown show-dropdown open",
-  //     bg_checked: true,
-  //     bgImage: this.props.bgImage,
-  //   };
-  // }
-  // handleClick = () => {
-  //   this.props.handleFixedClick();
-  // };
-  // onChangeClick = () => {
-  //   this.props.handleHasImage(!this.state.bg_checked);
-  //   this.setState({ bg_checked: !this.state.bg_checked });
-  // };
   return (
     <div className="fixed-plugin">
       <Dropdown>
@@ -152,70 +137,6 @@ function FixedPlugin({
             >
               <img alt="..." src={sideBarImage4}></img>
             </a>
-          </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="info"
-              >
-                Download, it's free!
-              </Button>
-            </div>
-          </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="default"
-              >
-                Checkout docs.
-              </Button>
-            </div>
-          </li>
-          <li className="header-title pro-title text-center">
-            Want more components?
-          </li>
-          <li className="button-container">
-            <div>
-              <Button
-                block
-                className="btn-fill"
-                href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="primary"
-              >
-                Get The PRO Version!
-              </Button>
-            </div>
-          </li>
-          <li className="header-title" id="sharrreTitle">
-            Thank you for sharing!
-          </li>
-          <li className="button-container mb-4">
-            <Button
-              className="btn-social btn-outline btn-round sharrre"
-              id="twitter"
-              variant="twitter"
-            >
-              <i className="fab fa-twitter"></i>· 256
-            </Button>
-            <Button
-              className="btn-social btn-outline btn-round sharrre"
-              id="facebook"
-              variant="facebook"
-            >
-              <i className="fab fa-facebook-square"></i>· 426
-            </Button>
           </li>
         </Dropdown.Menu>
       </Dropdown>
